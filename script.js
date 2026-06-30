@@ -58,7 +58,6 @@ function init() {
     setupTheme();
     setupEventListeners();
     setupNavCursor();
-    startGooeyTextMorphingEffect();
     setupScrollAnimations();
     setupPageLoad();
 }
@@ -116,6 +115,10 @@ function setupPageLoad() {
     setTimeout(() => {
         loadingScreen.style.opacity = '0';
         loadingScreen.style.visibility = 'hidden';
+        // Start the morphing effect after the loading screen has fully faded out (0.5s transition)
+        setTimeout(() => {
+            startGooeyTextMorphingEffect();
+        }, 500);
     }, 1000);
 }
 
