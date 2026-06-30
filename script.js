@@ -19,7 +19,7 @@ const morphConfig = {
 };
 
 // State Variables
-const professions = ["Cybersecurity Researcher", "SOC Analyst", "NOC Engineer"];
+const professions = ["Cybersecurity Researcher", "SOC Analyst", "IT Engineer"];
 let professionIndex = professions.length - 1;
 let morph = 0;
 let cooldown = morphConfig.cooldownTime;
